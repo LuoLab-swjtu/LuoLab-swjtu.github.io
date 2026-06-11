@@ -1,0 +1,19 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Luo Lab mark</title>
+  <desc id="desc">A refined Luo Lab mark with biomedical and molecular details.</desc>
+  <rect x="3.5" y="3.5" width="57" height="57" rx="13.5" fill="#F6F8F5"/>
+  <rect x="3.5" y="3.5" width="57" height="57" rx="13.5" stroke="#D7DDD4"/>
+
+  <path d="M16 15V43H31" stroke="#234F8F" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M28 15V35H43" stroke="#202326" stroke-width="4.8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M47 13V23" stroke="#2A7F77" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M42 18H52" stroke="#2A7F77" stroke-width="2.4" stroke-linecap="round"/>
+
+  <path d="M36 41C42 41 42 50 50 50" stroke="#2A7F77" stroke-width="2.1" stroke-linecap="round"/>
+  <path d="M50 41C44 41 44 50 36 50" stroke="#2A7F77" stroke-width="2.1" stroke-linecap="round"/>
+  <circle cx="36" cy="41" r="2.2" fill="#2A7F77"/>
+  <circle cx="50" cy="41" r="2.2" fill="#234F8F"/>
+  <circle cx="36" cy="50" r="2.2" fill="#234F8F"/>
+  <circle cx="50" cy="50" r="2.2" fill="#2A7F77"/>
+</svg>

@@ -1,0 +1,22 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Luo Lab mark with text</title>
+  <desc id="desc">A refined Luo Lab mark with biomedical and molecular details plus LUO LAB text.</desc>
+  <rect x="3.5" y="3.5" width="57" height="57" rx="13.5" fill="#F6F8F5"/>
+  <rect x="3.5" y="3.5" width="57" height="57" rx="13.5" stroke="#D7DDD4"/>
+
+  <path d="M16 14V34H29.5" stroke="#234F8F" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M27 14V28H39.5" stroke="#202326" stroke-width="4.4" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M43.5 12V22" stroke="#2A7F77" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M38.5 17H48.5" stroke="#2A7F77" stroke-width="2.4" stroke-linecap="round"/>
+
+  <path d="M39 30C45 30 45 38 51 38" stroke="#2A7F77" stroke-width="2" stroke-linecap="round"/>
+  <path d="M51 30C45 30 45 38 39 38" stroke="#2A7F77" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="39" cy="30" r="2.1" fill="#2A7F77"/>
+  <circle cx="51" cy="30" r="2.1" fill="#234F8F"/>
+  <circle cx="39" cy="38" r="2.1" fill="#234F8F"/>
+  <circle cx="51" cy="38" r="2.1" fill="#2A7F77"/>
+
+  <text x="14" y="50" fill="#202326" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="8.2" font-weight="700" letter-spacing=".5">LUO</text>
+  <text x="32.4" y="50" fill="#234F8F" font-family="Avenir Next, Helvetica Neue, Arial, sans-serif" font-size="8.2" font-weight="700" letter-spacing=".5">LAB</text>
+</svg>
