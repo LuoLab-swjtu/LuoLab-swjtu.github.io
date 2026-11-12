@@ -27,7 +27,27 @@ const researchAreas = [
   'Computational Biology'
 ]
 
+const ustcDestination = 'University of Science and Technology of China (VIDAR Group)'
+const ictDestination = 'Institute of Computing Technology, Chinese Academy of Sciences'
+const xjtuDestination = "Xi'an Jiaotong University"
+
 const newsItems = [
+  <>
+    <strong data-v-ee69fdec>2026-11</strong>: 📄 Yonghao Zhao's paper{' '}
+    <strong data-v-ee69fdec>DeSCENT</strong> was accepted by <strong data-v-ee69fdec>Bioinformatics</strong>
+  </>,
+  <>
+    <strong data-v-ee69fdec>2026-09</strong>: 🎓 Jingkun Yu received preliminary admission to{' '}
+    <img className="inline-news-icon" src="/images/ustc-emblem.jpg" alt="" /> {ustcDestination}
+  </>,
+  <>
+    <strong data-v-ee69fdec>2026-09</strong>: 🎓 Guangkai Shang received preliminary admission to the{' '}
+    <img className="inline-news-icon" src="/images/ict-cas-emblem.png" alt="" /> {ictDestination}
+  </>,
+  <>
+    <strong data-v-ee69fdec>2026-09</strong>: 🎓 Xu Han received preliminary admission to{' '}
+    <img className="inline-news-icon" src="/images/xjtu-emblem.jpg" alt="" /> {xjtuDestination}
+  </>,
   <>
     <strong data-v-ee69fdec>2026-06</strong>: 🎓 Yonghao Zhao graduated and started PhD program at{' '}
     <img className="inline-news-icon" src="/images/cuanschutz.png" alt="CU Anschutz logo" /> CU Anschutz Medical Campus
@@ -76,6 +96,15 @@ const graduateStudents = [
       ['Email', 'hunchgray@my.swjtu.edu.cn'],
       ['Research', 'Single-cell and bulk deconvolution-enhanced survival prediction']
     ]
+  },
+  {
+    name: 'Chenhao Liu (刘宸豪)',
+    image: '/images/liuchenhao.jpg',
+    alt: 'Chenhao Liu',
+    details: [
+      ['Email', 'a1105554311@163.com'],
+      ['Research', 'Auto research']
+    ]
   }
 ]
 
@@ -85,30 +114,11 @@ const undergraduateStudents = [
     image: '/images/yujingkun.jpg',
     alt: 'Jingkun Yu',
     details: [
-      ['Year', 'Junior'],
+      ['Graduation', 'Expected 2027'],
       ['Email', 'yujingkun05@163.com'],
-      ['Research', 'Computational biology, multiomics, medical image'],
-      ['GitHub', <a href="https://github.com/yujingkun1" target="_blank">https://github.com/yujingkun1</a>]
-    ]
-  },
-  {
-    name: 'Xu Han (韩煦)',
-    image: '/images/hanxu.jpg',
-    alt: 'Xu Han',
-    details: [
-      ['Year', 'Junior'],
-      ['Email', '18200468058@163.com'],
-      ['Research', 'Reinforcement learning for medical large language models']
-    ]
-  },
-  {
-    name: 'Guangkai Shang (商光楷)',
-    image: '/images/shangguangkai.jpg',
-    alt: 'Guangkai Shang',
-    details: [
-      ['Year', 'Junior'],
-      ['Email', 'guangkaishang@163.com'],
-      ['Research', 'AI for Biology, Spatial Transcriptomics']
+      ['Next Destination', `${ustcDestination} (pre-admitted)`],
+      ['Research', 'Computational biology, multiomics, medical LLM'],
+      ['Homepage', <a href="https://yujingkun.com/" target="_blank" rel="noreferrer">yujingkun.com</a>]
     ]
   },
   {
@@ -139,6 +149,52 @@ const undergraduateStudents = [
       ['Year', 'Sophomore'],
       ['Email', 'zihan_huang@my.swjtu.edu.cn'],
       ['Research', 'Medical large language models']
+    ]
+  },
+  {
+    name: 'Zhuoli Zhou (周卓立)',
+    image: '/images/zhouzhuoli.jpg',
+    alt: 'Zhuoli Zhou',
+    details: [
+      ['Email', '2686470067@qq.com'],
+      ['Research', 'Biological agent, Computational Biology, auto research']
+    ]
+  }
+]
+
+const alumni = [
+  {
+    name: 'Yonghao Zhao (赵永豪)',
+    image: '/images/zhaoyonghao.jpg',
+    alt: 'Yonghao Zhao',
+    details: [
+      ['Graduation', 'June 2026'],
+      ['Email', 'yonghao.zhao@cuanschutz.edu'],
+      ['Current Position', 'PhD Student, University of Colorado Anschutz Medical Campus'],
+      ['Research', 'Computational biology, scRNA-seq / Spatial-omics'],
+      ['Homepage', <a href="https://yonghaoz.com/" target="_blank">https://yonghaoz.com/</a>]
+    ]
+  },
+  {
+    name: 'Guangkai Shang (商光楷)',
+    image: '/images/shangguangkai.jpg',
+    alt: 'Guangkai Shang',
+    details: [
+      ['Graduation', 'Expected 2027'],
+      ['Email', 'guangkaishang@163.com'],
+      ['Next Destination', `${ictDestination} (pre-admitted)`],
+      ['Research', 'AI for Biology, Spatial Transcriptomics']
+    ]
+  },
+  {
+    name: 'Xu Han (韩煦)',
+    image: '/images/hanxu.jpg',
+    alt: 'Xu Han',
+    details: [
+      ['Graduation', 'Expected 2027'],
+      ['Email', '18200468058@163.com'],
+      ['Next Destination', `${xjtuDestination} (pre-admitted)`],
+      ['Research', 'Reinforcement learning for medical large language models']
     ]
   }
 ]
@@ -189,7 +245,7 @@ const publications = [
         Chuan Xu, Zhipeng Luo, Yazhou He
       </>
     ),
-    venue: 'bioRxiv preprint, 2026',
+    venue: 'Accepted by Bioinformatics (November 2026)',
     links: [
       ['bioRxiv', 'https://www.biorxiv.org/content/10.64898/2026.03.15.711877v1.abstract'],
       ['Code', 'https://github.com/YonghaoZhao722/DeSCENT']
@@ -714,25 +770,9 @@ function TeamPage() {
       <h2 id="alumni" tabIndex="-1">
         Alumni <HeaderAnchor id="alumni" title="Alumni" />
       </h2>
-      <PersonCard
-        person={{
-          name: 'Yonghao Zhao (赵永豪)',
-          image: '/images/zhaoyonghao.jpg',
-          alt: 'Yonghao Zhao',
-          details: [
-            ['Graduation', 'June 2026'],
-            ['Email', 'yonghao.zhao@cuanschutz.edu'],
-            ['Current Position', 'PhD Student, University of Colorado Anschutz Medical Campus'],
-            ['Research', 'Computational biology, scRNA-seq / Spatial-omics'],
-            [
-              'Homepage',
-              <a href="https://yonghaoz.com/" target="_blank">
-                https://yonghaoz.com/
-              </a>
-            ]
-          ]
-        }}
-      />
+      {alumni.map((person) => (
+        <PersonCard key={person.name} person={person} />
+      ))}
       <hr />
       <h2 id="collaborators" tabIndex="-1">
         Collaborators <HeaderAnchor id="collaborators" title="Collaborators" />
