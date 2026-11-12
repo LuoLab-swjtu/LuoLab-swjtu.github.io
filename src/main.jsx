@@ -34,7 +34,7 @@ const xjtuDestination = "Xi'an Jiaotong University"
 const newsItems = [
   <>
     <strong data-v-ee69fdec>2026-11</strong>: 📄 Yonghao Zhao's paper{' '}
-    <strong data-v-ee69fdec>DeSCENT</strong> was accepted by <strong data-v-ee69fdec>Bioinformatics</strong>
+    <strong data-v-ee69fdec>DeSCENT</strong> was accepted by <strong data-v-ee69fdec>Bioinformatics</strong>. Congratulations! 🎉
   </>,
   <>
     <strong data-v-ee69fdec>2026-09</strong>: 🎓 Jingkun Yu received preliminary admission to{' '}
@@ -116,7 +116,7 @@ const undergraduateStudents = [
     details: [
       ['Graduation', 'Expected 2027'],
       ['Email', 'yujingkun05@163.com'],
-      ['Next Destination', `${ustcDestination} (pre-admitted)`],
+      ['Next Destination', `Master's program at the ${ustcDestination} (pre-admitted)`],
       ['Research', 'Computational biology, multiomics, medical LLM'],
       ['Homepage', <a href="https://yujingkun.com/" target="_blank" rel="noreferrer">yujingkun.com</a>]
     ]
@@ -182,7 +182,7 @@ const alumni = [
     details: [
       ['Graduation', 'Expected 2027'],
       ['Email', 'guangkaishang@163.com'],
-      ['Next Destination', `${ictDestination} (pre-admitted)`],
+      ['Next Destination', `PhD program at the ${ictDestination} (pre-admitted)`],
       ['Research', 'AI for Biology, Spatial Transcriptomics']
     ]
   },
@@ -193,7 +193,7 @@ const alumni = [
     details: [
       ['Graduation', 'Expected 2027'],
       ['Email', '18200468058@163.com'],
-      ['Next Destination', `${xjtuDestination} (pre-admitted)`],
+      ['Next Destination', `Master's program at ${xjtuDestination} (pre-admitted)`],
       ['Research', 'Reinforcement learning for medical large language models']
     ]
   }
